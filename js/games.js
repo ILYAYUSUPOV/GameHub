@@ -9,8 +9,8 @@ const allIMages= [
 	{ id: 7, pathImage: './/assets/images/p8.jpg', category: 'all apocalypse action' },
 	{ id: 8, pathImage: './/assets/images/p9.jpg', category: 'all rpg' },
 	{ id: 9, pathImage: './/assets/images/p10.jpg', category: 'all shooter rpg' },
-	{ id: 10, pathImage: './/assets/images/p11.jpg', category: 'shooter apocalypse' },
-	{ id: 11, pathImage: './/assets/images/p12.jpg', category: 'multiplayer shooter' },
+	{ id: 10, pathImage: './/assets/images/p11.jpg', category: 'all shooter apocalypse' },
+	{ id: 11, pathImage: './/assets/images/p12.jpg', category: 'all multiplayer shooter' },
 	{ id: 12, pathImage: './/assets/images/p13.jpg', category: 'all shooter' },
 	{ id: 13, pathImage: './/assets/images/p14.jpg', category: 'all multiplayer apocalypse' },
 	{ id: 14, pathImage: './/assets/images/p15.jpg', category: 'all multiplayer shooter' },
@@ -45,34 +45,13 @@ function init() {
 
 function hundlerCategoryClick(event) {
 	if (clickedCategory === event.target.getAttribute('data-category')) return
-	const containIndex = []
 	clickedCategory = event.target.getAttribute('data-category')
-	
-	console.log(clickedCategory)
-	
+
 	Array.from(document.querySelectorAll(".image-card")).forEach((item) => {
-		if (item.getAttribute('data-category').indexOf(clickedCategory !== -1)){
-			// imageGames.removeChild(imageGames.childNodes[index])
-			// item.remove(console.log)
-			// console.log(item.getAttribute('data-category'))
-		}
+		if (item.getAttribute('data-category').indexOf(clickedCategory) === -1) return item.classList.add('hideElement')
+		item.classList.remove('hideElement')
 	})
-	// const filtredImages = Array.from(image).filter(item => item.getAttribute('data-category').indexOf(clickedCategory) !== -1)
-	//  Array.from(image).forEach((element, index) => {
-	// 	if (element.getAttribute('data-category').indexOf(clickedCategory) === -1){
-	//  	 	return imageGames.removeChild(imageGames.childNodes[index])
-	// 	}
-	// 	containIndex.push(element.getAttribute('data-index'))
-	// })
-	// console.log(Array.from(image))
-	// filtredImages.forEach(element => {
-	// 	containIndex.forEach(item => {
-	// 		if (element.getAttribute('data-index') !== item ) {
-	// 			imageGames.appendChild(element)
-	// 		}
-	// 	})
-	// })
-	// image = document.querySelectorAll('.image-card')
+	// const filtredImages = allIMages.filter(item => item.category.indexOf(clickedCategory) !== -1)
 }
 
 for (const category of categoryBtn) {

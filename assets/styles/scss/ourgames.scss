@@ -28,8 +28,16 @@
 .image-games {
 	display: flex;
 	flex-wrap: wrap;
+	transition: ease-in-out 1.0s;
 }
 .image-card {
+	transition: 1.0s ease-in-out;
 	width: 33%;
 	object-fit: cover;
+}
+
+.hideElement {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
 }
