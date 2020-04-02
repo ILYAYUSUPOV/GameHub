@@ -42,37 +42,22 @@ function init() {
 
 	imageGames.innerHTML = stringTemplate
 }
-
+function afterEnter(el) {
+	el.style.left = el.offsetLeft + 'px'
+	el.style.top = el.offsetTop + 'px'
+}
 function hundlerCategoryClick(event) {
 	if (clickedCategory === event.target.getAttribute('data-category')) return
-	const containIndex = []
 	clickedCategory = event.target.getAttribute('data-category')
-	
-	console.log(clickedCategory)
-	
 	Array.from(document.querySelectorAll(".image-card")).forEach((item) => {
-		if (item.getAttribute('data-category').indexOf(clickedCategory !== -1)){
-			// imageGames.removeChild(imageGames.childNodes[index])
-			// item.remove(console.log)
-			// console.log(item.getAttribute('data-category'))
+		afterEnter(item)
+		if (item.getAttribute('data-category').indexOf(clickedCategory) === -1) {
+			item.classList.add('hide-element')
+			return setTimeout(() => (item.classList.add('remove-element')), 500)
 		}
+		item.classList.remove('hide-element')
+		item.classList.remove('remove-element')
 	})
-	// const filtredImages = Array.from(image).filter(item => item.getAttribute('data-category').indexOf(clickedCategory) !== -1)
-	//  Array.from(image).forEach((element, index) => {
-	// 	if (element.getAttribute('data-category').indexOf(clickedCategory) === -1){
-	//  	 	return imageGames.removeChild(imageGames.childNodes[index])
-	// 	}
-	// 	containIndex.push(element.getAttribute('data-index'))
-	// })
-	// console.log(Array.from(image))
-	// filtredImages.forEach(element => {
-	// 	containIndex.forEach(item => {
-	// 		if (element.getAttribute('data-index') !== item ) {
-	// 			imageGames.appendChild(element)
-	// 		}
-	// 	})
-	// })
-	// image = document.querySelectorAll('.image-card')
 }
 
 for (const category of categoryBtn) {

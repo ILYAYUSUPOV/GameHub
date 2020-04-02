@@ -1,0 +1,19 @@
+{
+  "name": "gamehub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch assets/styles/scss/entry.scss:assets/styles/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ILYAYUSUPOV/GameHub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ILYAYUSUPOV/GameHub/issues"
+  },
+  "homepage": "https://github.com/ILYAYUSUPOV/GameHub#readme"
+}
