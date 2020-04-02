@@ -1,0 +1,24 @@
+
+.container-left {
+    display: flex;
+}
+
+.container-right {
+    display: flex;
+}
+
+.blog-container {
+    display: flex;
+}
+
+.blog-right {
+    width: 66%;
+}
+
+.blog-left {
+    width: 33%;
+}
+
+.blog-right , .blog-left {
+    margin: 0 15px;
+}

@@ -1,0 +1,159 @@
+@import "constants.scss";
+html {
+	font-family: 'Webfont', sans-serif;
+	min-width: 320px;
+	height: 100%;
+}
+body, html {
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+  flex-direction: column;
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+//Wrapper
+.wrapper {
+  width: 100%;
+ 	margin: 0 auto;
+  max-width: 1140px;
+}
+.title-padding {
+	padding: 48px 0;
+}
+.title-bottom {
+	padding-bottom: 48px;
+}
+
+//include Wrapper
+
+//text settings
+.size64 {
+	font-size: 64px;
+}
+.size40 {
+	font-size: 40px;
+}
+.size16 {
+	font-size: 16px;
+}
+.size12 {
+	font-size: 12px;
+}
+.upperCase {
+  text-transform: uppercase;
+}
+.font300 {
+	font-weight: 300;
+}
+.font500 {
+	font-weight: 500;
+}
+.font700 {
+	font-weight: 700;
+}
+.letter1 {
+	letter-spacing: 1px;
+}
+.letter4 {
+	letter-spacing: 4px;
+}
+line {
+	line-height: 24px;
+}
+
+//text style
+a {
+  text-decoration: none;
+}
+p {
+	font-size: 16px;
+	color: $lightgrey;
+  margin: 0 auto;
+  line-height: 30px;
+}
+h1 {
+	color: $white;
+  font-size: 112px;
+  margin: 0;
+  font-weight: 100;
+}
+h2 {
+	font-size: 64px;
+	color: $orange;
+	margin: 0;
+	text-align: center;
+}
+h3 {
+	color: $darkgrey;
+	font-size: 1em;
+	margin: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+h4 {
+	line-height: 24px;
+	color: $darkgrey;
+	margin: 0;
+	text-decoration: none;
+}
+h5 {
+  font-size: 40px;
+	color: $darkgrey;
+	margin: 0;
+}
+li {
+	margin: 10px 0;
+}
+
+.mail-map {
+	font-size: 16px;
+	color: $lightgrey;
+  margin: 0 auto;
+  line-height: 30px;
+
+}
+
+//color
+.white {
+	color: $white;
+}
+.darkgrey {
+  color: $darkgrey;
+}
+.lightgrey {
+  color: $lightgrey;
+}
+.orange {
+  color: $orange;
+}
+.grey {
+	color: $grey;
+}
+
+///color backgroung
+.back-grey {
+	background-color: #ececec;
+}
+
+.scroll-top {
+	background: url('../../images/arrow.png') no-repeat;
+	display: inline-block;
+	position: fixed;
+	border: none;
+	outline: none;
+	opacity: 0;
+	width: 42px;
+	height: 42px;
+	bottom: 2%;
+	right: 4%;
+	z-index: 0;
+	transition: 0.5s ease-in-out;
+}
+	

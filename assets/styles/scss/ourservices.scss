@@ -1,0 +1,83 @@
+@import "constants.scss";
+
+.services-card {
+	display: flex;
+	margin-top: 48px;
+}
+.card {
+	justify-content: center;
+	text-align: center;
+	margin: 0 15px;
+	padding: 32px;
+	width: 30%;
+  background: $white;
+	box-shadow: 0 0px 1px rgb(107, 107, 107), 0 1px 2px rgba(0,0,0,.24);
+}
+.icon {
+	float: none;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	margin: 0 auto 1em;
+	background: #ff9800;
+}
+.gamepad {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 35px;
+	height: 35px;
+	background: no-repeat center;
+	background-image: url("../../icon/gamepad.svg");
+	background-color: $orange;
+}
+.trophy {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 32px;
+	height: 32px;
+	background: no-repeat center;
+	background-image: url("../../icon/trophy.svg");
+	background-color: $orange;
+}
+.user {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 32px;
+	height: 32px;
+	background: no-repeat center;
+	background-image: url("../../icon/user.svg");
+	background-color: $orange;
+}
+.like {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 32px;
+	height: 32px;
+	background: no-repeat center;
+	background-image: url("../../icon/thumbs.svg");
+	background-color: $orange;
+}
+.comment {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 32px;
+	height: 32px;
+	background: no-repeat center;
+	background-image: url("../../icon/comments.svg");
+	background-color: $orange;
+}
+.mail {
+	display: flex;
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 32px;
+	height: 32px;
+	background: no-repeat center;
+	background-image: url("../../icon/envelope.svg");
+	background-color: $orange;
+}

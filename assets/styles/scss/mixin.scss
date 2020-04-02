@@ -1,0 +1,16 @@
+@mixin breakpoint-width($min, $max : 0) {
+    @if ($max == 0) {
+      @media only screen
+      and (min-width: $min) { @content; }
+    } @else {
+      @media only screen
+      and (min-width: $min)
+      and (max-width: $max - 1) { @content; }
+    }
+  }
+  // миксин описывающий стили дочерних элементов
+  @mixin between-children {
+    &>:not(:first-child) {
+      @content;
+    }
+  }

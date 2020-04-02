@@ -1,0 +1,62 @@
+@import "constants.scss";
+
+.container-team {
+    display: flex;
+}
+.people-team {
+    overflow: hidden;
+    position: relative;
+    margin: 0 15px;
+    &:hover {
+        .animation-team{
+            transform: translateY(0);
+        }
+    }
+}
+.team {
+    width: 100%;
+}
+.animation-team {
+    transform: translateY(100%);
+    position: absolute;
+    background: $orange;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    transition: .5s all;
+}
+.team-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.icon-team {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    margin: 3px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+ .fb {
+     &:hover {
+         background: #3b5998;
+     }
+ }
+
+ .inst {
+     &:hover {
+         background: #E1306C;
+     }
+ }
+
+ .tw {
+     &:hover {
+         background: #00acee;
+     }
+ }

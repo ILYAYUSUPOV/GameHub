@@ -1,0 +1,46 @@
+@import "constants.scss";
+
+.footer {
+    background: #333;
+    padding: 4em 0;
+}
+.footer-main {
+    display: flex;
+    justify-content: center;
+}
+.footer-left, .footer-centr, .footer-right {
+    width: 100%;
+}
+.footer-centr {
+    margin: 0 20px;
+}
+.footer-title {
+    margin-bottom: 25px;
+}
+
+.icon-footer {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    margin: 3px;
+    color: #FFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+.fb2 {
+    &:hover {
+        background-color: #3b5998;
+    }
+}
+
+.inst2 {
+    &:hover {
+        background-color: #E1306C;
+    }
+}
+
+.tw2 {
+    &:hover {
+        background-color: #00acee;
+    }
+}

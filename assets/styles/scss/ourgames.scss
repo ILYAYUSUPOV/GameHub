@@ -1,0 +1,35 @@
+@import "constants.scss";
+
+.category-menu {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	  padding: 0;
+	  padding-bottom: 48px;
+}
+.border {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: .9em;
+	font-weight: 600;
+	margin: 0 0.4em;
+	border-radius: 30px;
+	border: 2px solid $darkgrey;
+	background-color: rgba(white , 0);
+	outline: none;
+	transition: ease-in-out 0.3s;
+	&:hover {
+		color: $white;
+		background-color: $orange;
+    border: solid 2px $orange;
+	}
+}
+.image-games {
+	display: flex;
+	flex-wrap: wrap;
+}
+.image-card {
+	width: 33%;
+	object-fit: cover;
+}

@@ -1,0 +1,19 @@
+.map {
+    background-color: #ececec;
+}
+.map-icon {
+    display: flex;
+    align-items: center;
+}
+.map-title {
+    text-align: center;
+}
+.map-info {
+    display: flex;
+    justify-content: center;
+}
+.map-left {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
