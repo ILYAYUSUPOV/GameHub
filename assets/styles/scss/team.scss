@@ -16,6 +16,9 @@
 .team {
     width: 100%;
 }
+.people-display {
+    display: flex;
+}
 .animation-team {
     transform: translateY(100%);
     position: absolute;
@@ -60,3 +63,24 @@
          background: #00acee;
      }
  }
+
+ @include breakpoint-width( 0 , 650px) {
+	.people-display {
+        display: block;
+    }
+
+    .people-team {
+        margin: 5px;
+    }
+  
+}
+
+@include breakpoint-width( 0 , 350px) {
+    .people-display {
+        display: block;
+        margin: 0 40px;
+    }
+    .container-team {
+        display: block;
+    }
+}

@@ -22,3 +22,35 @@
 .blog-right , .blog-left {
     margin: 0 15px;
 }
+
+@include breakpoint-width(0 , 867px) {
+    .blog-container {
+        display: grid;
+        margin: 0 25px;
+    }
+    .container-right {
+        margin: 15px;
+    }
+    .container-left {
+        margin: 15px;
+    }
+}
+
+@include breakpoint-width (0 , 440px) {
+    .container-right {
+        margin: 5px;
+    }
+    .container-left {
+        margin: 5px;
+    }
+    .blog-left {
+        margin: 0 5px;
+    }
+    .blog-right {
+        margin: 0 5px;
+    }
+    .blog-container {
+        display: grid;
+        margin: 0 15px;
+    }
+}

@@ -81,3 +81,44 @@
 	background-image: url("../../icon/envelope.svg");
 	background-color: $orange;
 }
+
+
+
+
+@include breakpoint-width( 0 , 867px) {
+  .card {
+	  margin: 0 10px;
+	  padding: 25px;
+  }
+  .services-card {
+	margin-top: 40px;
+  }
+}
+
+@include breakpoint-width(0 , 708px) {
+	.card {
+		margin: 0 5px;
+		padding: 20px;
+	}
+	.services-card {
+		margin-top: 32px;
+	}
+}
+
+@include breakpoint-width(0 , 637px) {
+	.services-card {
+		display: grid;
+		margin-top: 5px;
+	}
+
+	.card {
+    	padding: 5px;
+    	margin: 5px 0 5px 0;
+	}
+}
+
+@include breakpoint-width(0 , 425px) {
+	.card {
+		width: 97%;
+	}
+}
