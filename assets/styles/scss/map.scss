@@ -1,48 +1,47 @@
 .map {
-    background-color: #ececec;
+	background-color: #ececec;
 }
 .map-icon {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 .map-title {
-    text-align: center;
-    margin: 0 100px;
+	text-align: center;
+	margin: 0 100px;
 }
 .map-info {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .map-left {
-    width: 30px;
-    height: 30px;
-    padding: 20px;
+	width: 30px;
+	height: 30px;
+	padding: 20px;
 }
 .map-mix {
-    display: flex;
+	display: flex;
 }
 
 @include breakpoint-width(0 , 580px) {
-    .map-info {
-        display: block;
-    }
-    .map-mix {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+	.map-info {
+		display: block;
+	}
+	.map-mix {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 @include breakpoint-width(0 , 800px) {
-    .map-icon {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        margin: 0 10px;
-    }
-
-    .map-title {
-        text-align: center;
-        margin: 0 15px;
-    }
+	.map-icon {
+			display: block;
+			justify-content: center;
+			text-align: center;
+			margin: 0 10px;
+	}
+	.map-title {
+		text-align: center;
+		margin: 0 15px;
+	}
 }

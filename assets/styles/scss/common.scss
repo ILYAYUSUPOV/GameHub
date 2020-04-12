@@ -75,54 +75,55 @@ a {
   text-decoration: none;
 }
 p {
+	margin: 0 auto;
+  line-height: 30px;
 	font-size: 16px;
 	color: $lightgrey;
-  margin: 0 auto;
-  line-height: 30px;
 }
 h1 {
+	margin: 0;
+  font-weight: 100;
 	color: $white;
   font-size: 112px;
-  margin: 0;
-  font-weight: 100;
 }
 h2 {
-	font-size: 64px;
-	color: $orange;
 	margin: 0;
 	text-align: center;
+	font-size: 64px;
+	color: $orange;
 }
 h3 {
-	color: $darkgrey;
-	font-size: 1em;
 	margin: 0;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 4px;
+	color: $darkgrey;
+	font-size: 1em;
 }
 h4 {
-	line-height: 24px;
-	color: $darkgrey;
 	margin: 0;
 	text-decoration: none;
+	line-height: 24px;
+	color: $darkgrey;
 }
 h5 {
+	margin: 0;
   font-size: 40px;
 	color: $darkgrey;
-	margin: 0;
 }
 li {
 	margin: 10px 0;
 }
 
 .mail-map {
+	margin: 0 auto;
+  line-height: 30px;
 	font-size: 16px;
 	color: $lightgrey;
-  margin: 0 auto;
-  line-height: 30px;
-
 }
-
+.pointer {
+	cursor: pointer;
+}
 //color
 .white {
 	color: $white;
@@ -146,17 +147,17 @@ li {
 }
 
 .scroll-top {
+	width: 42px;
+	height: 42px;
+	opacity: 0;
+	bottom: 2%;
+	right: 4%;
+	z-index: 0;
 	background: url('../../images/arrow.png') no-repeat;
 	display: inline-block;
 	position: fixed;
 	border: none;
 	outline: none;
-	opacity: 0;
-	width: 42px;
-	height: 42px;
-	bottom: 2%;
-	right: 4%;
-	z-index: 0;
 	transition: 0.5s ease-in-out;
 }
 

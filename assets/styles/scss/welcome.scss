@@ -32,7 +32,6 @@
 	padding: 35px;
 	}
 }
-
 @include breakpoint-width(0 , 630px) {
 	.image-text {
 		width: 30%;
@@ -40,7 +39,6 @@
 		line-height: 22px;
 	}
 }
-
 @include breakpoint-width(0 , 475px) {
 	.image-text {
 		width:47%;
@@ -52,7 +50,6 @@
 		height: 385px;
 	}
 }
-
 @include breakpoint-width(0 , 376px) {
 	.image-text {
 		transform: translate(61%, 9%);

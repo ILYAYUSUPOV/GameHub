@@ -21,7 +21,6 @@
     border-bottom: 2px solid black;
     outline: none;
 }
-
 .contact-form {
     margin: 0 25px;
 }
@@ -32,7 +31,6 @@
         color: red;
     }
 }
-
 .input-invalid-footer{
     color: red;
         &::placeholder {
@@ -65,12 +63,14 @@ textarea {
     background: $orange;
     border: 2px solid $orange;
     font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: ease-in-out 0.3s;
     &:hover {
 		color: black;
         background: $white;
         border: solid 2px black;
 	}
-
 }
 .feedback-contact {
     position: absolute;
@@ -78,9 +78,7 @@ textarea {
     bottom: 20px;
     opacity: 0;
     transition: 0.3s ease-in-out;
-    
 }
-
 @include breakpoint-width(0 , 580px) {
     .main-form {
         display: block;

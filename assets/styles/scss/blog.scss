@@ -2,27 +2,21 @@
 .container-left {
     display: flex;
 }
-
 .container-right {
     display: flex;
 }
-
 .blog-container {
     display: flex;
 }
-
 .blog-right {
     width: 66%;
 }
-
 .blog-left {
     width: 33%;
 }
-
 .blog-right , .blog-left {
     margin: 0 15px;
 }
-
 @include breakpoint-width(0 , 867px) {
     .blog-container {
         display: grid;
@@ -35,7 +29,6 @@
         margin: 15px;
     }
 }
-
 @include breakpoint-width (0 , 440px) {
     .container-right {
         margin: 5px;

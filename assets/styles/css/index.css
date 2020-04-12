@@ -41,7 +41,10 @@
   border-radius: 20px;
   font-size: 1em;
   padding: .5em 2em;
-  margin: 0 1em; }
+  margin: 0 1em;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s; }
   .nav-link:hover {
     border: solid 2px #fff; }
 
@@ -62,7 +65,10 @@
   text-decoration: none;
   border-radius: 30px;
   margin: 0;
-  background: #ff9800; }
+  background: #ff9800;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s; }
   .headline-button:hover {
     color: #fff;
     background: none;
@@ -223,23 +229,22 @@
   justify-content: center; }
 
 .footer-left, .footer-centr, .footer-right {
-  padding: 0 20px;
   width: 33%; }
 
 .footer-email {
   margin: 12px 0 0 0;
-  background-color: #2d2d2d;
-  padding: 12px 12px; }
+  padding: 12px 12px;
+  background-color: #2d2d2d; }
 
 .email-footer {
+  margin: 0;
   width: 40%;
   padding: 8px 16px;
   font-size: 16px;
   text-align: left;
   font-weight: 400;
   border: 2px solid #fff;
-  outline: none;
-  margin: 0; }
+  outline: none; }
 
 .footer-btn {
   background: #ff9800;
@@ -250,7 +255,9 @@
   font-size: 16px;
   padding: 8px 16px;
   text-align: center;
-  outline: none; }
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s; }
 
 .footer-title {
   margin-bottom: 25px; }
@@ -285,8 +292,8 @@
 
   .footer-centr {
     text-align: center;
-    margin: 20px 0;
-    width: 100%; }
+    width: 100%;
+    margin: 20px 0; }
 
   .footer-right {
     text-align: center;
@@ -296,7 +303,13 @@
     width: 25%; } }
 @media only screen and (min-width: 0) and (max-width: 549px) {
   .email-footer {
-    width: 35%; } }
+    width: 35%; }
+
+  .footer-centr {
+    margin: 20px 0; } }
+@media only screen and (min-width: 0) and (max-width: 339px) {
+  .footer-btn {
+    padding: 8px 5px; } }
 html {
   font-family: 'Webfont', sans-serif;
   min-width: 320px;
@@ -365,50 +378,53 @@ a {
   text-decoration: none; }
 
 p {
-  font-size: 16px;
-  color: #999999;
   margin: 0 auto;
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 16px;
+  color: #999999; }
 
 h1 {
-  color: #fff;
-  font-size: 112px;
   margin: 0;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #fff;
+  font-size: 112px; }
 
 h2 {
-  font-size: 64px;
-  color: #ff9800;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 64px;
+  color: #ff9800; }
 
 h3 {
-  color: #212121;
-  font-size: 1em;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  color: #212121;
+  font-size: 1em; }
 
 h4 {
-  line-height: 24px;
-  color: #212121;
   margin: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  line-height: 24px;
+  color: #212121; }
 
 h5 {
+  margin: 0;
   font-size: 40px;
-  color: #212121;
-  margin: 0; }
+  color: #212121; }
 
 li {
   margin: 10px 0; }
 
 .mail-map {
-  font-size: 16px;
-  color: #999999;
   margin: 0 auto;
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 16px;
+  color: #999999; }
+
+.pointer {
+  cursor: pointer; }
 
 .white {
   color: #fff; }
@@ -429,17 +445,17 @@ li {
   background-color: #ececec; }
 
 .scroll-top {
+  width: 42px;
+  height: 42px;
+  opacity: 0;
+  bottom: 2%;
+  right: 4%;
+  z-index: 0;
   background: url("../../images/arrow.png") no-repeat;
   display: inline-block;
   position: fixed;
   border: none;
   outline: none;
-  opacity: 0;
-  width: 42px;
-  height: 42px;
-  bottom: 2%;
-  right: 4%;
-  z-index: 0;
   transition: 0.5s ease-in-out; }
 
 @media only screen and (min-width: 0) and (max-width: 1025px) {
@@ -569,7 +585,7 @@ li {
   text-align: center;
   margin: 0 15px;
   padding: 32px;
-  width: 30%;
+  width: 33%;
   background: #fff;
   box-shadow: 0 0px 1px #6b6b6b, 0 1px 2px rgba(0, 0, 0, 0.24); }
 
@@ -946,7 +962,10 @@ textarea {
   text-transform: uppercase;
   background: #ff9800;
   border: 2px solid #ff9800;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s; }
   .button-contact:hover {
     color: black;
     background: #fff;

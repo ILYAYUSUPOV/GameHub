@@ -1,99 +1,109 @@
 @import "constants.scss";
 
 .footer {
-    background: #333;
-    padding: 48px 0;
+  background: #333;
+  padding: 48px 0;
 }
 .footer-main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .footer-left, .footer-centr, .footer-right {
-    padding: 0 20px;
-    width: 33%;
+  width: 33%;
 }
 .footer-email {
-    margin: 12px 0 0 0;
-    background-color: rgb(45, 45, 45);
-    padding: 12px 12px; 
+  margin: 12px 0 0 0;
+  padding: 12px 12px;
+  background-color: rgb(45, 45, 45);
 }
 .email-footer {
-    width: 40%;
-    padding: 8px 16px;
-    font-size: 16px;
-    text-align: left;
-    font-weight: 400;
-    border: 2px solid $white;
-    outline: none;
-    margin: 0;
+	margin: 0;
+	width: 40%;
+	padding: 8px 16px;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 400;
+	border: 2px solid $white;
+	outline: none;
 }
 .footer-btn {
-    background: $orange;
-    cursor: pointer;
-    border: 2px solid $orange;
-    color: $white;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 8px 16px;
-    text-align: center;
-    outline: none;
+	background: $orange;
+	cursor: pointer;
+	border: 2px solid $orange;
+	color: $white;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 8px 16px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition: ease-in-out 0.3s;
     
 }
 .footer-title {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 .icon-footer {
-    height: 20px;
-    width: 20px;
-    padding: 2px;
-    margin: 3px;
-    color: $white;
-    border-radius: 5px;
-    transition: 0.5s all;
+	height: 20px;
+	width: 20px;
+	padding: 2px;
+	margin: 3px;
+	color: $white;
+	border-radius: 5px;
+	transition: 0.5s all;
 }
 .fb2 {
-    &:hover {
-        background-color: #3b5998;
-    }
+	&:hover {
+		background-color: #3b5998;
+	}
 }
 .inst2 {
-    &:hover {
-        background-color: #E1306C;
-    }
+	&:hover {
+		background-color: #E1306C;
+	}
 }
 
 .tw2 {
-    &:hover {
-        background-color: #00acee;
-    }
+	&:hover {
+		background-color: #00acee;
+	}
 }
 
 @include breakpoint-width ( 0 , 977px) {
-    .footer-main {
-        display: block;
-        padding: 0 50px;
-        justify-content: center;
-    }
-    .footer-left {
-        text-align: center;
-        width: 100%;
-    }
-    .footer-centr {
-        text-align: center;
-        margin: 20px 0;
-        width: 100%;
-    }
-    .footer-right {
-        text-align: center;
-        width: 100%;
-    }
-    .email-footer {
-        width: 25%;
-    }
+	.footer-main {
+		display: block;
+		padding: 0 50px;
+		justify-content: center;
+	}
+	.footer-left {
+		text-align: center;
+		width: 100%;
+	}
+	.footer-centr {
+		text-align: center;
+		width: 100%;
+		margin: 20px 0;
+	}
+	.footer-right {
+		text-align: center;
+		width: 100%;
+	}
+	.email-footer {
+		width: 25%;
+	}
 }
 
 @include breakpoint-width ( 0 , 550px) {
-    .email-footer {
-        width: 35%;
-    }
+	.email-footer {
+		width: 35%;
+	}
+	.footer-centr {
+		margin: 20px 0;
+	}
+}
+
+@include breakpoint-width ( 0 , 340px) {
+	.footer-btn {
+		padding: 8px 5px;
+	}
 }
