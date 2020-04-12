@@ -9,6 +9,7 @@
     justify-content: center;
 }
 .footer-left, .footer-centr, .footer-right {
+    padding: 0 20px;
     width: 33%;
 }
 .footer-email {
@@ -17,7 +18,7 @@
     padding: 12px 12px; 
 }
 .email-footer {
-    width: 50%;
+    width: 40%;
     padding: 8px 16px;
     font-size: 16px;
     text-align: left;
@@ -47,6 +48,7 @@
     padding: 2px;
     margin: 3px;
     color: $white;
+    border-radius: 5px;
     transition: 0.5s all;
 }
 .fb2 {
@@ -69,6 +71,7 @@
 @include breakpoint-width ( 0 , 977px) {
     .footer-main {
         display: block;
+        padding: 0 50px;
         justify-content: center;
     }
     .footer-left {

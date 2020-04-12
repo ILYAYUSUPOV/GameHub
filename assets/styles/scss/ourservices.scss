@@ -101,24 +101,26 @@
 		padding: 20px;
 	}
 	.services-card {
-		margin-top: 32px;
+		margin-top: 20px;
 	}
 }
 
 @include breakpoint-width(0 , 637px) {
-	.services-card {
-		display: grid;
-		margin-top: 5px;
-	}
-
 	.card {
     	padding: 5px;
-    	margin: 5px 0 5px 0;
 	}
 }
 
-@include breakpoint-width(0 , 425px) {
+@include breakpoint-width(0 , 470px) {
+	.services-card {
+		display: grid;
+	}
 	.card {
-		width: 97%;
+		padding: 5px;
+		width: 92%;
+    	margin: 10px;
+	}
+	.services-card {
+		margin-top: 0px;
 	}
 }

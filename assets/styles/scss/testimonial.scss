@@ -23,3 +23,31 @@
 .developer-name {
   margin: 15px 0;
 }
+.developer-text {
+  margin-bottom: 20px;
+}
+
+@include breakpoint-width(0 , 800px) {
+	.developer-quote {
+    max-width: 550px;
+    margin-top: 15px;
+  }
+}
+
+@include breakpoint-width(0 , 600px) {
+	.developer-quote {
+    max-width: 450px;
+  }
+}
+
+@include breakpoint-width(0 , 550px) {
+	.developer-quote {
+    max-width: 350px;
+  }
+}
+
+@include breakpoint-width(0 , 550px) {
+	.developer-quote {
+    max-width: 350px;
+  }
+}
